@@ -1,0 +1,602 @@
+CRITICAL - 2023-11-12 16:52:22 --> A non-numeric value encountered
+in APPPATH/Views/affichage_accueil.php on line 12.
+ 1 APPPATH/Views/affichage_accueil.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_accueil.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Accueil.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Accueil->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 16:52:22 --> Uncaught ErrorException: chmod() has been disabled for security reasons in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Log/Handlers/FileHandler.php:119
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Log/Handlers/FileHandler.php(119): chmod()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Log/Logger.php(294): CodeIgniter\Log\Handlers\FileHandler->handle()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Common.php(810): CodeIgniter\Log\Logger->log()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Debug/Exceptions.php(133): log_message()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+A non-numeric value encountered
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_accueil.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/View/View.php(228): include('/home/2023DIFAL...')
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Common.php(1190): CodeIgniter\View\View->render()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Accueil.php(14): view()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Accueil->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+in SYSTEMPATH/Log/Handlers/FileHandler.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-12 16:52:37 --> A non-numeric value encountered
+in APPPATH/Views/affichage_accueil.php on line 12.
+ 1 APPPATH/Views/affichage_accueil.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_accueil.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Accueil.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Accueil->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 17:39:42 --> Invalid file: "affichage_scenarios.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Scenario.php(19): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 17:42:14 --> Undefined variable: pseudos
+in APPPATH/Views/affichage_scenarios.php on line 10.
+ 1 APPPATH/Views/affichage_scenarios.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_scenarios.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 17:44:48 --> Undefined index: sce_image
+in APPPATH/Views/affichage_scenarios.php on line 12.
+ 1 APPPATH/Views/affichage_scenarios.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_scenarios.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 17:46:04 --> Undefined index: ind_niveau
+in APPPATH/Views/affichage_scenarios.php on line 16.
+ 1 APPPATH/Views/affichage_scenarios.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_scenarios.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:44:42 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:44:42 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:45:10 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:45:10 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:45:12 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:45:12 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:45:44 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:45:44 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:45:46 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:45:46 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:47:13 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:47:13 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:49:00 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:49:00 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:53:46 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:53:46 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:58:21 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:58:21 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 18:58:23 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 18:58:23 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:00:10 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:00:10 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:01:38 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:01:38 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:01:40 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:01:40 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:02:38 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:02:38 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:02:39 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:02:39 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:03:28 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:03:28 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:03:29 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:03:29 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:03:32 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:03:32 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:04:28 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:04:28 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:04:29 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:04:29 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:04:53 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:04:53 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:06:02 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:06:02 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:09:14 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:09:14 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-12 19:09:33 --> mysqli_sql_exception: Unknown column 'F5A8941AF468710' in 'where clause' in /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22103110/public_html/V1/ci/app/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+#5 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+#6 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22103110/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22103110/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-12 19:09:33 --> Unknown column 'F5A8941AF468710' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(60): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Scenario.php(20): App\Models\Db_model->get_info_etape()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:14:48 --> Undefined variable: scenarios
+in APPPATH/Views/affichage_scenarios.php on line 22.
+ 1 APPPATH/Views/affichage_scenarios.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_scenarios.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:15:24 --> Undefined variable: scenarios
+in APPPATH/Views/affichage_scenarios.php on line 22.
+ 1 APPPATH/Views/affichage_scenarios.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_scenarios.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:16:09 --> Undefined property: stdClass::$eta_
+in APPPATH/Views/affichage_scenarios.php on line 33.
+ 1 APPPATH/Views/affichage_scenarios.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22103110/public_html/V1/ci/app/Views/affichage_scenarios.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

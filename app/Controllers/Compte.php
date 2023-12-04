@@ -1,0 +1,210 @@
+<?php
+namespace App\Controllers;
+
+use App\Models\Db_model;
+use CodeIgniter\Exceptions\PageNotFoundException;
+
+class Compte extends BaseController
+{
+    protected $model;
+    public function __construct()
+    {
+        helper('form');
+        $this->model = model(Db_model::class);
+    }
+    public function lister()
+    {
+        $data['titre'] = "Liste de tous les comptes";
+        $data['logins'] = $this->model->get_all_compte();
+        $data['nbcompte'] = $this->model->get_nb_compte();
+        $session = session();
+        if ($session->has('user')) {
+            if ($this->model->is_admin($session->get('user')) == true) {
+                return view('templates/haut', $data)
+                    . view('templates/menu_administrateur')
+                    . view('affichage_comptes')
+                    . view('templates/bas');
+            } else {
+                return view('templates/haut', $data)
+                    . view('templates/menu_organisateur')
+                    . view('affichage_comptes')
+                    . view('templates/bas');
+            }
+        } else {
+            return view('templates/haut', $data)
+                . view('templates/menu_visiteur')
+                . view('affichage_comptes')
+                . view('templates/bas');
+        }
+    }
+    public function creer()
+    {
+        // L’utilisateur a validé le formulaire en cliquant sur le bouton
+        if ($this->request->getMethod() == "post") {
+            if (
+                !$this->validate(
+                    [
+                        'pseudo' => 'required|max_length[255]|min_length[2]',
+                        'mdp' => 'required|max_length[255]|min_length[8]',
+                        'role' => 'in_list[A,O]'
+                    ],
+                    [
+                        // Configuration des messages d’erreurs
+                        'pseudo' => [
+                            'required' => 'Veuillez entrer un pseudo pour le compte !',
+                        ],
+                        'mdp' => [
+                            'min_length' => 'Le mot de passe saisi est trop court !',
+                            'required' => 'Veuillez entrer un mot de passe !',
+                        ],
+                        'role' => [
+                            'in_list' => 'Le rôle doit être soit "A" ou "O".'
+                        ]
+                    ]
+                )
+            ) {
+                // La validation du formulaire a échoué, retour au formulaire !
+                return view('templates/haut', ['titre' => 'Créer un compte'])
+                    . view('compte/compte_creer')
+                    . view('templates/bas');
+            }
+            // La validation du formulaire a réussi, traitement du formulaire
+            $recuperation = $this->validator->getValidated();
+            $this->model->set_compte($recuperation);
+            $data['le_compte'] = $recuperation['pseudo'];
+            $data['le_message'] = "Nouveau nombre de comptes : ";
+            //Appel de la fonction créée dans le précédent tutoriel :
+            $data['le_total'] = $this->model->get_nb_compte();
+            return redirect()->to(base_url() . 'index.php/compte/lister');
+        }
+        return view('templates/haut', ['titre' => 'Créer un compte'])
+            . view('compte/compte_creer')
+            . view('templates/bas');
+
+    }
+    public function connecter()
+    {
+        // L’utilisateur a validé le formulaire en cliquant sur le bouton
+        if ($this->request->getMethod() == "post") {
+            if (
+                !$this->validate([
+                    'pseudo' => 'required',
+                    'mdp' => 'required'
+                ])
+            ) { // La validation du formulaire a échoué, retour au formulaire !
+                return view('templates/haut', ['titre' => 'Se connecter'])
+                    . view('templates/menu_visiteur')
+                    . view('connexion/compte_connecter')
+                    . view('templates/bas');
+            }
+            // La validation du formulaire a réussi, traitement du formulaire
+            $username = $this->request->getVar('pseudo');
+            $password = $this->request->getVar('mdp');
+            if ($this->model->connect_compte($username, $password) == true) {
+                $session = session();
+                $session->set('user', $username);
+                if ($this->model->is_admin($username) == true) {
+                    $session->set('role', 'A');
+                } else {
+                    $session->set('role', 'O');
+                }
+                return redirect()->to('/');
+            }
+        }
+        // L’utilisateur veut afficher le formulaire pour se conncecter
+        return view('templates/haut', ['titre' => 'Se connecter'])
+            . view('templates/menu_visiteur')
+            . view('connexion/compte_connecter')
+            . view('templates/bas');
+    }
+    public function afficher_profil()
+    {
+        $session = session();
+        if ($session->has('user')) {
+            if ($this->model->is_admin($session->get('user')) == true) {
+                return view('templates/haut')
+                    . view('templates/menu_administrateur')
+                    . view('connexion/compte_profil')
+                    . view('templates/bas');
+            } else {
+                return view('templates/haut')
+                    . view('templates/menu_organisateur')
+                    . view('connexion/compte_profil')
+                    . view('templates/bas');
+            }
+        } else {
+            return view('templates/haut', ['titre' => 'Se connecter'])
+                . view('templates/menu_visiteur')
+                . view('connexion/compte_connecter')
+                . view('templates/bas');
+        }
+    }
+    public function deconnecter()
+    {
+        $session = session();
+        $session->destroy();
+        return view('templates/haut', ['titre' => 'Se connecter'])
+            . view('templates/menu_visiteur')
+            . view('connexion/compte_connecter')
+            . view('templates/bas');
+    }
+    public function modifier_mdp()
+    {
+        if ($this->request->getMethod() == "post") {
+            $session = session();
+            if (
+                !$this->validate(
+                    [
+                        'pseudo' => 'required',
+                        'mdp' => 'required|max_length[255]|min_length[8]',
+                        'mdpchange' => 'required|max_length[255]|min_length[8]'
+                    ],
+                    [
+                        'pseudo' => [
+                            'required' => 'Veuillez entrer un pseudo pour le compte !',
+                        ],
+                        'mdp' => [
+                            'min_length' => 'Le mot de passe saisi est trop court !',
+                            'required' => 'Veuillez entrer un mot de passe !',
+                            'max_length'=>'Le mot de passe saisi est trop long !',
+                        ],
+                        'mdpchange' => [
+                            'required' => 'Veuillez entrer un nouveaux mot de passe pour le compte !',
+                            'min_length' => 'Le nouveau mot de passe saisi est trop court !',
+                            'max_length'=>'Le nouveau mot de passe saisi est trop long !',
+                        ]
+                    ]
+                )
+            ) { // La validation du formulaire a échoué, retour au formulaire !
+                if ($session->get('role') == 'A') {
+                    return view('templates/haut')
+                        . view('templates/menu_administrateur')
+                        . view('connexion/compte_profil')
+                        . view('templates/bas');
+                } else {
+                    return view('templates/haut')
+                        . view('templates/menu_organisateur')
+                        . view('connexion/compte_profil')
+                        . view('templates/bas');
+                }
+            }
+            // La validation du formulaire a réussi, traitement du formulaire
+            $saisie['pseudo'] = $session->get('user');
+            $saisie['mdpchange'] = $this->request->getVar('mdpchange');
+            $saisie['mdp'] = $this->request->getVar('mdp');
+            $this->model->update_compte($saisie);
+        }
+        // L’utilisateur veut afficher le formulaire pour se conncecter
+        if ($session->get('user') == 'A') {
+            return view('templates/haut')
+                . view('templates/menu_administrateur')
+                . view('connexion/compte_profil')
+                . view('templates/bas');
+        } else {
+            return view('templates/haut')
+                . view('templates/menu_organisateur')
+                . view('connexion/compte_profil')
+                . view('templates/bas');
+        }
+    }
+}
