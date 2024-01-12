@@ -1,0 +1,7 @@
+CRITICAL - 2023-12-12 15:53:09 --> Argument 2 passed to view() must be of the type array, null given, called in /home/2023DIFAL3/e22103110/public_html/V2/ci/app/Controllers/Scenario.php on line 420
+in SYSTEMPATH/Common.php on line 1178.
+ 1 APPPATH/Controllers/Scenario.php(420): view()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->scenario_reussite()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

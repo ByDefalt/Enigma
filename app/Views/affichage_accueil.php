@@ -1,9 +1,9 @@
 <section id="content">
     <?php
     if (!empty($all_actualite) && is_array($all_actualite)) {
-        ?>
+    ?>
         <div class="container">
-            <h1 class="text-center">Actualiter</h1>
+            <h1 class="text-center">Actualités</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -17,19 +17,23 @@
                     <?php
                     foreach ($all_actualite as $actualite) {
                         echo ("<tr>" .
-                            "<td>" . $actualite["act_intitule"] .
-                            "<td>" . $actualite["act_desc"] .
-                            "<td>" . $actualite["act_date"] .
-                            "<td>" . $actualite["com_pseudo"] .
+                            "<td>" . $actualite["act_intitule"] . "</td>" .
+                            "<td>" . $actualite["act_desc"] . "</td>" .
+                            "<td>" . $actualite["act_date"] . "</td>" .
+                            "<td>" . $actualite["com_pseudo"] . "</td>" .
                             "</tr>");
                     }
                     ?>
                 </tbody>
             </table>
         </div>
-        <?php
+    <?php
     } else {
-        echo ("<h3>Aucune Actualiter pour le moment</h3>");
+    ?>
+        <div class="container">
+            <h3 class="text-center">Aucune Actualité pour le moment</h3>
+        </div>
+    <?php
     }
     ?>
 </section>
