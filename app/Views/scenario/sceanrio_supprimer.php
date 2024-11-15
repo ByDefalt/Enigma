@@ -1,0 +1,1 @@
+<?php redirect()->to('/scenario/afficher_gestion'); ?>

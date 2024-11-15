@@ -1,0 +1,24 @@
+WARNING - 2024-04-30 15:04:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Accueil::$model is deprecated in APPPATH\Controllers\Accueil.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Accueil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-30 15:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-30 15:05:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Accueil::$model is deprecated in APPPATH\Controllers\Accueil.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Accueil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-30 15:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-30 15:05:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Accueil::$model is deprecated in APPPATH\Controllers\Accueil.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Accueil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-30 15:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-04-30 15:05:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Accueil::$model is deprecated in APPPATH\Controllers\Accueil.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Accueil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-04-30 15:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
