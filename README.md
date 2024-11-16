@@ -1,4 +1,4 @@
-# Space Invaders en python
+# Application Web de jeux serieux (énigme) en php,html,css,js et CodeIgniter4/Bootstrap
 
 ### Exemple : 
 
@@ -7,9 +7,6 @@
 <img src="markdown_doc/screen2.gif" alt="Example" width="700"/>
 
 <img src="markdown_doc/screen3.gif" alt="Example" width="700"/>
-
-###### Musique secrète quand la touche k est presser
-
 
 ### Acquis :
 
