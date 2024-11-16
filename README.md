@@ -1,59 +1,106 @@
-# CodeIgniter 4 Framework
+# Space Invaders en python
 
-## What is CodeIgniter?
+### Exemple : 
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+<img src="markdown_doc/screen1.gif" alt="Example" width="700"/>
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+<img src="markdown_doc/screen2.gif" alt="Example" width="700"/>
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+<img src="markdown_doc/screen3.gif" alt="Example" width="700"/>
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+###### Musique secrète quand la touche k est presser
 
-## Important Change with index.php
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+### Acquis :
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- **Architecture MVC**
 
-**Please** read the user guide for a better explanation of how CI4 works!
+    - <img src="markdown_doc/screen4.png" alt="Example" width="700"/>
+    ```php
+    public function lister()
+    {
+        $data['titre'] = "Liste de tous les comptes";
+        $data['logins'] = $this->model->get_all_compte();
+        $data['nbcompte'] = $this->model->get_nb_compte();
+        $session = session();
+        if ($session->has('user')) {
+            if ($session->get('role') == 'A') {
+                return view('templates/haut', $data)
+                    . view('templates/menu_administrateur')
+                    . view('affichage_comptes')
+                    . view('templates/bas');
+            } else{
+                return redirect()->to('/compte/afficher_profil');
+            }
+        } else {
+            return redirect()->to('/compte/connecter');
+        }
+    }
 
-## Repository Management
+    ```
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+- **Framework CodeIgniter 4**
+    ```php
+    public function creer()
+    {
+        $session = session();
+        // L’utilisateur a validé le formulaire en cliquant sur le bouton
+        if ($this->request->getMethod() == "post") {
+            if (
+                !$this->validate(
+                    [
+                        'pseudo' => 'required|max_length[255]|min_length[2]|is_unique[t_compte_com.com_pseudo]',
+                        'mdp' => 'required|max_length[255]|min_length[8]',
+                        'role' => 'in_list[A,O]',
+                        'vali' => 'in_list[A,D]'
+                    ],
+                    [
+                        // Configuration des messages d’erreurs
+                        'pseudo' => [
+                            'required' => 'Veuillez entrer un pseudo pour le compte !',
+                            'is_unique' => 'Pseudo déja existant',
+                        ],
+                        'mdp' => [
+                            'min_length' => 'Le mot de passe saisi est trop court !',
+                            'required' => 'Veuillez entrer un mot de passe !',
+                        ],
+                        'role' => [
+                            'in_list' => 'Le rôle doit être soit "A" ou "O".'
+                        ],
+                        'vali' => [
+                            'in_list' => 'Le validité doit être soit "A" ou "D".'
+                        ]
+                    ]
+                )
+            ) {
+                // La validation du formulaire a échoué, retour au formulaire !
+                return view('templates/haut')
+                    . view( 'templates/menu_administrateur')
+                    . view('compte/compte_creer')
+                    . view('templates/bas');
+            }
+            // La validation du formulaire a réussi, traitement du formulaire
+            $recuperation = $this->validator->getValidated();
+            $this->model->set_compte($recuperation);
+            $data['le_compte'] = $recuperation['pseudo'];
+            $data['le_message'] = "Nouveau nombre de comptes : ";
+            //Appel de la fonction créée dans le précédent tutoriel :
+            $data['le_total'] = $this->model->get_nb_compte();
+            return redirect()->to('/compte/lister');
+        }
+        if ($session->has('user')) {
+            if($session->get('role')=='A'){
+                return view('templates/haut')
+                . view('templates/menu_administrateur')
+                . view('compte/compte_creer')
+                . view('templates/bas');
+            }else{
+                return redirect()->to('/compte/afficher_profil');
+            }
+        } else {
+            return redirect()->to('/compte/connecter');
+        }
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+    }
 
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+    ```
